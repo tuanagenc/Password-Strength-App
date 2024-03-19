@@ -12,10 +12,9 @@ pass.addEventListener('input', () => {
     //zayıf şifre yazısı
     if (pass.value.length < 4) {
         str.innerHTML = "weak";
-        //renk degişimi
+        //şifrenin yeterliligine göre renk degişimi
         pass.style.borderColor = "#ff5925";
         msg.style.color = "#ff5925";
-
     }
     else if (pass.value.length >= 4 && pass.value.length < 8) {
         str.innerHTML = "medium";
